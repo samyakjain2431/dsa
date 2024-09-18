@@ -11,6 +11,7 @@ int main(){
 
     int a = 5;
     int *ptr = &a;
+    int *ptr2 = ptr;
     cout<<"before"<<*ptr<<endl;
     update(ptr);
     cout<<"after"<<*ptr<<endl;
