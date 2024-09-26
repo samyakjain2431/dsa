@@ -4,7 +4,7 @@ using namespace std;
 
 int linearSearchBackwards(vector<int>arr, int size, int target){
     
-    if(size==0) return -101;
+    if(size==0) return -101; //-101 for bad result
     if(arr[size-1] == target) return size-1;
     
     return linearSearchBackwards(arr, size-1, target);
@@ -18,7 +18,7 @@ int linearSearchForwards(vector<int>arr, int size, int target){
 }
 
 int binarySearch(vector<int> arr, int target , int size, int start = 0){
-    if (start >= size) return -1; 
+    if (start >= size) return -101; 
     int mid = start + (size-start-1)/2;
     if(arr[mid] == target) return mid;
     if(arr[mid]<target) return binarySearch(arr, target, size, mid+1);
