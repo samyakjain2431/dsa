@@ -10,7 +10,7 @@ int main () {
     while(i<j){
         while(i<j && arr[i]!=0)i++;
         while(i<j && arr[j]==0)j--;
-        cout << i << " " << j << endl;
+        // cout << i << " " << j << endl;
         swap(arr[i], arr[j]);
     }
     for (int i = 0; i < arr.size(); i++)
